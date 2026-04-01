@@ -1,0 +1,44 @@
+:root {
+  --bg: white;
+  --text: black;
+}
+
+.dark {
+  --bg: #121212;
+  --text: white;
+}
+
+.app {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.stats {
+  margin-top: 20px;
+}
+.active {
+  background: #8884d8;
+  color: white;
+}
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
